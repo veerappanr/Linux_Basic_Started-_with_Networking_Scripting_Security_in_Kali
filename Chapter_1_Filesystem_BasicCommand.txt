@@ -1,0 +1,121 @@
+$ ls 
+- directory and file list show
+
+$ pwd 
+- root user "/home/username"
+
+$ whoami 
+- username "username"
+
+$ ls -l 
+- "It provides us with significantly more information. such as whether an object is a file or directory, the number of links, the owner, the group, size, when it created or modified, and its name".
+
+$ ls -la
+- show all files and hidden files.
+
+--help command:
+
+$ aircrack-ng --help 
+$ man aircrack-ng 
+
+showing all aircrack-ng details.
+https://www.aircrack-ng.org
+
+$ locate aircrack-ng 
+- Searching location
+
+$ whereis aircrack-ng 
+- finding binaries with whereis "OUTPUT : aircarck-­ng: /usr/bin/aircarck­-ng /usr/share/man/man1/aircarck­-ng.1.gz"
+
+
+$ which aircrack-ng 
+- finding binaries in the PATH variable with which. " OUTPUT: /usr/bin/aircrack­-ng"
+
+-Performing more powerful searches with find
+Syntax: find directory options expression
+
+$ find / -type f -name apache2
+
+$ find /etc -type f -name apache2
+
+$ find /etc -type f --name apache2
+
+-Filtering with grep
+
+$ ps aux
+
+$ ps aux | grep apache2
+
+Creating Files:
+
+Cat - short for concatenate - it meaning to combine pieces together (not a reference to your favorite domesticated feline). The cat command is generally used for displaying the contents of a file, but it can also be used to create small files.
+
+"input"
+$ cat > linuxskills   
+linux is the most valuable skills set 
+
+ "output"
+$ cat linuxskills    
+linux is the most valuable skills set 
+
+"input"
+$ cat >> linuxskills
+Everyone should learn linux
+
+$cat linuxskills
+linux is the most valuable skills set 
+Everyone should learn linux
+
+overwrite same file with new information:
+
+$ cat > linuxskills
+Everyone is learn IT security with linux skills.
+
+$ cat linuxskills
+Everyone is learn IT security with linux skills.
+
+File Creation with touch:
+
+$ touch newfile
+
+Creating a Directory
+
+$ mkdir newdirectory
+
+To navigate to this newly created directory
+
+$ cd newdirectory
+
+Copying a file 
+
+$ touch oldfile
+
+$ cp oldfile /root/newdirectory/newfile
+
+$cd newdirectory
+
+$newdirectory$ls
+
+OUTPUT: newfile oldfile
+
+Renaming a file:
+
+$ mv newfile newfile2
+
+$ ls
+oldfile newfile2
+
+Removing a file:
+
+$ rm newfile2
+
+Removing a Directory:
+
+$ rm newdirectory
+
+"rm :faild to remove 'newdirectory": Directory not empty
+
+$ rm -r newdirectory
+
+
+
