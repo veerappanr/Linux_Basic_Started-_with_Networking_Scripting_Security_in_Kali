@@ -1,0 +1,62 @@
+ANALYZING AND MANAGING NETWORKS
+
+IP - Internet Protocol
+
+DNS - Domain Name System
+
+Analyzing networks with IFCONFIG
+
+$ ifconfig
+
+NIC - Network interface Card
+
+MAC - Media access control 
+
+Localhost - your own web server local system. local host ip address : 127.0.0.1
+
+LAN - Local Area Network
+
+CHECKING WIRELESS NETWORK DEVICES WITH IWCONFIG
+
+$ iwconfig
+
+wlan0 IEEE 802.11bg ESSID:off/any
+
+
+Changing Your IP Address
+
+$ ifconfig eth0 192.168.181.115
+
+Changing Your Network Mask and Broadcast Address
+
+$ ifconfig eth0 192.168.181.115 netmask 255.255.0.0 broadcast 192.168.1.255
+
+Spoofing Your MAC Address
+
+$ ifconfig eth0 down
+
+$ ifconfig eth0 hw ether 00:11:22:33:44:55
+
+$ ifconfig eth0 up
+
+Assigning New IP Addresses from the DHCP Server
+
+DHCP - Dynamic Host Configuration Protocal
+
+$ dhclient eth0
+
+$ ifconfig
+
+Mapping Your Own IP Addresses
+
+$ leafpad /etc/hosts
+
+
+
+
+
+
+
+
+
+ 
