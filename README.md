@@ -2,3 +2,5 @@
 Linux Basic Started with Networking,Scripting,Security in Kali.
 
 Chapter 1 - File system, The terminal , Basic Commands 
+Chapter 2 - Aircrack-ng , Test Manipulation
+Chapter 3 - ANALYZING AND MANAGING NETWORKS
