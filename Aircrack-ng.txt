@@ -1,0 +1,11 @@
+Aircrack-ng
+
+* Aircrack-ng is a complete suite of tools to assess WIFI Network Security.
+
+* Monitoring : Packet capture and export of data to text files for further processing by third party tools.
+
+* Attacking:  Replay attacks, deauthentication, fake access point and other via packet injection.
+
+* Testing: Checking WIFI cards and driver capabilities.
+
+* Cracking: WEP and WPA PSK ( WPA 1 and 2)
