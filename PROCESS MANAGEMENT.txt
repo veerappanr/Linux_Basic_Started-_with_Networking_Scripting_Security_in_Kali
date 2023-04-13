@@ -1,0 +1,75 @@
+PROCESS MANAGEMENT
+
+Viewing process
+
+$ps
+
+$ps aux
+
+USER The user who invoked the process
+
+PID The process ID
+
+%CPU The percent of CPU this process is using
+
+%MEM The percent of memory this process is using
+
+COMMAND The name of the command that started the process
+
+Filtering process name
+
+metasploit exploitation framework.
+
+$ msfconsole
+
+$ps aux | grep msfconsole
+
+Finding the Greediest Processes with top
+
+$ top
+
+Setting the Priority When Starting a Process
+
+$ nice -n -10 /bin/slowprocess
+
+Changing the Priority of a Running Process with renice
+
+$ renice 20 6996
+
+Killing Processes
+
+
+Signal name  option  description
+
+SIGHUP	1		Hangup(HUP) signal. it stops the designated process and restarts it with the same PID
+
+SIGINT 	2		Interrupt(INT) signal. it is a weak kill signal that isnot guaranteed to work, but it works on most cases.
+
+SIGQUIT 	3          core dump. it terminates the process and saves the process information in memory, and then it saves this information in the current working 				directory to a file named core.
+
+SIGTERM 	15		Termination(TERM) signal. it is the kill command. default kill signal.
+
+SIGKILL	9 		kill signal - it forces the process to stopby sending the process resources to a special device. /dev/null.
+
+$ kill -1 6996
+
+$ kill -9 6996
+
+$ killall -9 zombieprocess 
+
+
+Running Processes in the background 
+
+$ leafpad newscript
+
+Moving process to the foreground 
+
+$ fg 1234
+
+Time format at command.
+
+$ at 7:20pm
+
+  
+
+  

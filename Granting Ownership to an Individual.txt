@@ -1,0 +1,51 @@
+Granting Ownership to an Individual User
+
+$ chown bob /tmp/bobsfile
+
+Granting Ownership to a Group
+
+$ chgrp security newIDS
+
+CHECKING PERMISSIONS
+
+$ ls -l /usr/share/hashcat
+
+	1. The file type
+	2. The permissions on the file for owner, groups, and users, respectively
+	3. The number of links
+	4. The owner of the file
+	5. The size of the file in bytes
+	6. When the file was created or last modified
+	7. The name of the file
+
+Changing Permissions with Decimal Notation
+
+	Octal and Binary Representations of Permissions
+
+Binary Octal rwx
+
+000     0    ---
+001     1    --x
+010     2    -w-
+011     3    -wx
+100     4    r--
+101     5    r-x
+110     6    rw-
+111     7    rwx
+
+$ chmod 774 hashcat.hcstat ( this file permission output: -rwxrwxr--  )
+ 
+Changing permission with UGO. 
+
+UGO Syntax 
+
+Chmod, u-user, g-group, o -others, w- write followed by three operators - Removes a permission, + Adds apermission, = Sets a permission.
+
+$ chmod u-w hashcat.hcstat
+
+
+
+
+
+
+

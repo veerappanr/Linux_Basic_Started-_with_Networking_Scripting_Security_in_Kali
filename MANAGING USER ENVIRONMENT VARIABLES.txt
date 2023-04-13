@@ -1,0 +1,49 @@
+MANAGING USER ENVIRONMENT VARIABLES
+
+VIEWING AND MODIFYING ENVIRONMENT VARIABLES
+
+$ env
+
+Viewing All Environment Variables
+
+$ set | more
+
+Filtering for Particular Variables
+
+$ set | grep HISTSIZE
+
+Changing Variable Values for a Session
+
+$ HISTSIZE=0
+
+Making Variable Value Changes Permanent
+
+$ echo $HISTSIZE> ~/valueofHISTSIZE.txt
+
+$ set> ~/valueofALLon01012017.txt
+
+$ export HISTSIZE
+
+$ HISTSIZE=1000
+
+$ export HISTSIZE
+
+CHANGING YOUR PATH
+
+$ echo $PATH
+
+Adding to the PATH Variable
+
+$  PATH=$PATH:/root/newnackingtool
+
+CREATING A USER-DEFINED VARIABLE
+
+$ MYNEWVARIABLE="Linux is the most valuable skill set in the 21st century"
+
+$ echo #MYNEWVARIABLE
+
+$ unset MYNEWVARIABLE
+
+$ echo $MYNEWVARIABLE
+
+ 
