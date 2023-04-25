@@ -1,0 +1,86 @@
+COMPRESSING AND ARCHIVING
+
+
+TARRING FILES TOGETHER
+
+$ ls -l
+
+­rwxr­xr­x 1 root root 22311 Nov 27 2018 13:00 hackersarise1.sh
+­rwxr­xr­x 1 root root 8791 Nov 27 2018 13:00 hackersarise2.sh
+­rwxr­xr­x 1 root root 3992 Nov 27 2018 13:00 hackersarise3.sh
+
+# Creating a tarball of three files
+
+$ tar -cvf HackersArise.tar hackersarise1 hackersarise2 hackersarise3
+
+hackersarise1
+hackersarise2
+hackersarise3
+
+
+$ ls -l 
+
+--­­snip--
+
+­rw­r­­r­­ 1 root root 40960 Nov 27 2018 13:32 HackersArise.tar
+
+--snip--
+
+# Display tar files from the tarball, without extracting them, by using the tar.
+
+$ tar -tvf HackersArise.tar
+
+rwxr­xr­x 1 root root 22311 Nov 27 2018 13:00 hackersarise1.sh
+­rwxr­xr­x 1 root root 8791 Nov 27 2018 13:00 hackersarise2.sh
+­rwxr­xr­x 1 root root 3992 Nov 27 2018 13:00 hackersarise3.sh
+
+# Extract tar files
+
+$ tar -xvf HackersArise.tar
+
+hackersarise1
+hackersarise2
+hackersarise3
+
+# If you want to extract the files and do so “silently,” meaning without showing any output, you can simply remove the -v (verbose) switch, as shown
+
+$ tar -xf HackersArise.tar
+
+
+COMPRESSING FILES
+
+
+1. gzip, which uses the extension .tar.gz or .tgz
+2. bzip2, which uses the extension .tar.bz2
+3. compress, which uses the extension .tar.z
+
+# Compressing with gzip
+
+$ gzip HackersArise.*
+
+$ ls -l
+
+­rw­r­­r­­ 1 root root 3299 Nov 27 2018 13:32 HackersArise.tar.gz
+
+
+# We can then decompress that same file by using the gunzip command, short for GNU unzip
+
+$ gunzip HackersArise.*
+
+­­Compressing with bzip2
+
+$ bzip2 HackersArise.*
+
+Compressing with compress
+
+$ compress HackersArise.*
+
+$ ls -l
+
+­rw­r­­r­­ 1 root root 5476 Nov 27 2018 13:32 HackersArise.tar.Z
+
+$ uncompress HackersArise.*
+
+
+­
+
